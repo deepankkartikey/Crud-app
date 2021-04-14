@@ -1,8 +1,9 @@
 package com.example.demo.service;
 
-import org.springframework.stereotype.Service;
+import com.example.demo.entity.Employee;
 
-@Service
-public class EmployeeService {
+public interface EmployeeService {
+
+	Employee addEmployee(Employee employee);
 
 }
