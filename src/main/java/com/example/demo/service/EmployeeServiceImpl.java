@@ -25,5 +25,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeCrudRepo.findAll();
 	}
 
+	@Override
+	public Employee getEmployeeById(long empId) {
+		return employeeCrudRepo.findById(empId).get();
+	}
+
 
 }
